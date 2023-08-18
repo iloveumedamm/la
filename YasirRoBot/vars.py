@@ -21,7 +21,7 @@ class Var(object):
     BIND_ADRESS = str(getenv("WEB_SERVER_BIND_ADDRESS", "178.128.207.223"))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5791145987").split())
-    NO_PORT = bool(getenv("NO_PORT", False))
+    NO_PORT = bool(getenv("NO_PORT", "80"))
     APP_NAME = None
     OWNER_USERNAME = str(getenv("OWNER_USERNAME", "Ipapcornbot_Owner"))
     HASH_LENGTH = int(environ.get("HASH_LENGTH", 6))
